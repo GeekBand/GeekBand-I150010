@@ -10,6 +10,7 @@
 #import "GBMSquareData.h"
 #import "GBMSquareDataModel.h"
 #import "GBMSquareCollectionView.h"
+#import "GBMTabBarView.h"
 
 @interface GBMSquareViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

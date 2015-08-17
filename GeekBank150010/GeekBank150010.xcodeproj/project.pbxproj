@@ -18,8 +18,9 @@
 		9C44EB941B80405300F8164D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C44EB931B80405300F8164D /* CoreLocation.framework */; };
 		9C44EB961B80405A00F8164D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C44EB951B80405A00F8164D /* MapKit.framework */; };
 		9C44EB9A1B804A6C00F8164D /* GBMSquareData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44EB991B804A6C00F8164D /* GBMSquareData.m */; };
-		9C44EBB01B8086F400F8164D /* Square.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C44EBAF1B8086F400F8164D /* Square.storyboard */; };
 		9C44EBEE1B80C44100F8164D /* GBMSquareCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C44EBED1B80C44100F8164D /* GBMSquareCollectionView.m */; };
+		9C65E20C1B82129900FBC558 /* GBMTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C65E20B1B82129900FBC558 /* GBMTabBarView.m */; };
+		9C65E20F1B82179200FBC558 /* GBMCameraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C65E20E1B82179200FBC558 /* GBMCameraButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +53,12 @@
 		9C44EB951B80405A00F8164D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9C44EB981B804A6C00F8164D /* GBMSquareData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMSquareData.h; path = Classes/Parsers/GBMSquareData.h; sourceTree = "<group>"; };
 		9C44EB991B804A6C00F8164D /* GBMSquareData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMSquareData.m; path = Classes/Parsers/GBMSquareData.m; sourceTree = "<group>"; };
-		9C44EBAF1B8086F400F8164D /* Square.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Square.storyboard; path = Resources/Square.storyboard; sourceTree = "<group>"; };
 		9C44EBEC1B80C44100F8164D /* GBMSquareCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMSquareCollectionView.h; path = Classes/Views/GBMSquareCollectionView.h; sourceTree = "<group>"; };
 		9C44EBED1B80C44100F8164D /* GBMSquareCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMSquareCollectionView.m; path = Classes/Views/GBMSquareCollectionView.m; sourceTree = "<group>"; };
+		9C65E20A1B82129900FBC558 /* GBMTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMTabBarView.h; path = Classes/Views/GBMTabBarView.h; sourceTree = "<group>"; };
+		9C65E20B1B82129900FBC558 /* GBMTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMTabBarView.m; path = Classes/Views/GBMTabBarView.m; sourceTree = "<group>"; };
+		9C65E20D1B82179200FBC558 /* GBMCameraButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMCameraButton.h; path = Classes/Views/GBMCameraButton.h; sourceTree = "<group>"; };
+		9C65E20E1B82179200FBC558 /* GBMCameraButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMCameraButton.m; path = Classes/Views/GBMCameraButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +154,6 @@
 				9C44EB5C1B8028DB00F8164D /* LaunchScreen.xib */,
 				9C44EB671B8028DB00F8164D /* Images.xcassets */,
 				9C44EB8B1B802FBF00F8164D /* Main.storyboard */,
-				9C44EBAF1B8086F400F8164D /* Square.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -169,6 +172,10 @@
 			children = (
 				9C44EBEC1B80C44100F8164D /* GBMSquareCollectionView.h */,
 				9C44EBED1B80C44100F8164D /* GBMSquareCollectionView.m */,
+				9C65E20A1B82129900FBC558 /* GBMTabBarView.h */,
+				9C65E20B1B82129900FBC558 /* GBMTabBarView.m */,
+				9C65E20D1B82179200FBC558 /* GBMCameraButton.h */,
+				9C65E20E1B82179200FBC558 /* GBMCameraButton.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -290,7 +297,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C44EB681B8028DB00F8164D /* Images.xcassets in Resources */,
-				9C44EBB01B8086F400F8164D /* Square.storyboard in Resources */,
 				9C44EB8C1B802FBF00F8164D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,11 +317,13 @@
 			files = (
 				9C44EB601B8028DB00F8164D /* AppDelegate.m in Sources */,
 				9C44EBEE1B80C44100F8164D /* GBMSquareCollectionView.m in Sources */,
+				9C65E20F1B82179200FBC558 /* GBMCameraButton.m in Sources */,
 				9C44EB811B802A5E00F8164D /* main.m in Sources */,
 				9C44EB921B803A8400F8164D /* GBMSquareDataModel.m in Sources */,
 				9C44EB8A1B802CDB00F8164D /* GBMSquareViewController.m in Sources */,
 				9C44EB9A1B804A6C00F8164D /* GBMSquareData.m in Sources */,
 				9C44EB5D1B8028DB00F8164D /* LaunchScreen.xib in Sources */,
+				9C65E20C1B82129900FBC558 /* GBMTabBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +384,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				New_Setting = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,6 +423,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				New_Setting = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

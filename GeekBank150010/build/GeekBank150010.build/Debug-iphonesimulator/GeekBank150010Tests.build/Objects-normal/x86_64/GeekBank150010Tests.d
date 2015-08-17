@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/Myron/Developer/Project/GeekBand-I150010\ Muran/GeekBank150010/GeekBank150010Tests/GeekBank150010Tests.m \
+  /Users/Myron/Developer/Projects/CAHA_GeekBandA150010_Projects/GeekBank150010/GeekBank150010Tests/GeekBank150010Tests.m \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestSuiteRun.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestSuite.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestProbe.h \

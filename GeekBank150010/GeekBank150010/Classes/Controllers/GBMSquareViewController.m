@@ -32,6 +32,11 @@
     squareTableView.dataSource = self;
     squareTableView.delegate   = self;
     
+    // 插入底栏
+    GBMTabBarView * tabBarView = [[GBMTabBarView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 50, self.view.frame.size.width, 50)];
+    tabBarView.backgroundColor = [UIColor colorWithRed: 245 / 255.0 green: 244 / 255.0 blue:241 / 255.0 alpha:1];
+    [self.view addSubview:tabBarView];
+    
     // 提取数据
     GBMSquareData * squareDataArray = [[GBMSquareData alloc] init];
     self.dataArrays  = [[NSMutableArray alloc] initWithArray:squareDataArray.squaredataArray];
@@ -67,7 +72,11 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     if (indexPath.row < [self.dataArrays count]) {
         [self cleanCellSubviews:cell];
-        GBMSquareCollectionView * squareCollectionView = [[GBMSquareCollectionView alloc] initWithFrame:cell.bounds];
+        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, cell.bounds.size.width, 20)];
+        label.text = [NSString stringWithFormat:@"This is the %li cell", (long)indexPath.row];
+        [cell addSubview:label];
+        
+        GBMSquareCollectionView * squareCollectionView = [[GBMSquareCollectionView alloc] initWithFrame:CGRectMake(0, 20, cell.bounds.size.width, cell.bounds.size.height - 20)];
         [squareCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"CollectionCell"];
         squareCollectionView.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         squareCollectionView.delegate = self;
@@ -103,7 +112,6 @@
     if (indexPath.row < self.dataArray.count) {
         UIImageView * imageView = [[UIImageView alloc] initWithFrame:cell.bounds];
         imageView.contentMode = UIViewContentModeScaleToFill;
-        
         GBMSquareDataModel * data = self.dataArray[indexPath.row];
         imageView.image = [UIImage imageNamed:data.photoURL];
         [self cleanCellSubviews:cell];
@@ -113,7 +121,7 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(100, 100);
+    return CGSizeMake(150, 100);
 }
 
 @end
