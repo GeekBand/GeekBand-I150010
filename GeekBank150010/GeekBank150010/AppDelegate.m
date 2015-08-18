@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  GeekBank150010
 //
-//  Created by 黄穆斌 on 15/8/16.
-//  Copyright (c) 2015年 huangmubin. All rights reserved.
+//  Created by 黄穆斌 on 15/8/18.
+//  Copyright (c) 2015年 MuRan. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -17,12 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
     #pragma mark - 初始化window并给他附上导航控制器，然后将GBMAquareViewController控制器放到它下面。
-     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     GBMSquareViewController * squareViewController = [[GBMSquareViewController alloc] init];
     UINavigationController  * navigationController = [[UINavigationController alloc] initWithRootViewController:squareViewController];
-                        _window.rootViewController = navigationController;
+    _window.rootViewController = navigationController;
     
     [_window makeKeyAndVisible];
     return YES;
