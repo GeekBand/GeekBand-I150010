@@ -2,8 +2,8 @@
 //  GBMSquareViewController.m
 //  GeekBank150010
 //
-//  Created by 黄穆斌 on 15/8/16.
-//  Copyright (c) 2015年 huangmubin. All rights reserved.
+//  Created by 黄穆斌 on 15/8/18.
+//  Copyright (c) 2015年 MuRan. All rights reserved.
 //
 
 #import "GBMSquareViewController.h"
@@ -21,16 +21,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     // 设置导航按钮
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addMessageAction:)];
     
     // 插入并配置表格
     UITableView * squareTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     [self.view addSubview:squareTableView];
+    
     [squareTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    //    [squareTableView registerClass:[GBMSquareTableViewCell class] forCellReuseIdentifier:@"Cell"];
+    
     squareTableView.dataSource = self;
     squareTableView.delegate   = self;
+    
+    // 插入底栏
+    GBMTabBarView * tabBarView = [[GBMTabBarView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 50, self.view.frame.size.width, 50)];
+    tabBarView.backgroundColor = [UIColor colorWithRed: 245 / 255.0 green: 244 / 255.0 blue:241 / 255.0 alpha:1];
+    [self.view addSubview:tabBarView];
     
     // 提取数据
     GBMSquareData * squareDataArray = [[GBMSquareData alloc] init];
@@ -64,11 +72,24 @@
     return self.dataArrays.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    GBMSquareTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     if (indexPath.row < [self.dataArrays count]) {
+        //        cell.label.text = [NSString stringWithFormat:@"This is the %li cell", (long)indexPath.row];
+        //        [cell.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"CollectionCell"];
+        //        cell.collectionView.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        //        cell.collectionView.dataSource = self;
+        //        cell.collectionView.delegate = self;
+        //        cell.label.backgroundColor = [UIColor blackColor];
+        //        NSLog(@"%lf", cell.label.bounds.size.height);
+        
         [self cleanCellSubviews:cell];
-        GBMSquareCollectionView * squareCollectionView = [[GBMSquareCollectionView alloc] initWithFrame:cell.bounds];
+        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, cell.bounds.size.width, 20)];
+        label.text = [NSString stringWithFormat:@"This is the %li cell", (long)indexPath.row];
+        [cell addSubview:label];
+        
+        GBMSquareCollectionView * squareCollectionView = [[GBMSquareCollectionView alloc] initWithFrame:CGRectMake(0, 20, cell.bounds.size.width, cell.bounds.size.height - 20)];
         [squareCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"CollectionCell"];
+        
         squareCollectionView.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         squareCollectionView.delegate = self;
         squareCollectionView.dataSource = self;
@@ -103,7 +124,6 @@
     if (indexPath.row < self.dataArray.count) {
         UIImageView * imageView = [[UIImageView alloc] initWithFrame:cell.bounds];
         imageView.contentMode = UIViewContentModeScaleToFill;
-        
         GBMSquareDataModel * data = self.dataArray[indexPath.row];
         imageView.image = [UIImage imageNamed:data.photoURL];
         [self cleanCellSubviews:cell];
@@ -113,7 +133,8 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(100, 100);
+    return CGSizeMake(150, 100);
 }
+
 
 @end

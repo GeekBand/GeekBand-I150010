@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C44EB561B8028DB00F8164D"
+               BlueprintIdentifier = "9C41ACFA1B82BD3B00944CF8"
                BuildableName = "GeekBank150010.app"
                BlueprintName = "GeekBank150010"
                ReferencedContainer = "container:GeekBank150010.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C44EB6F1B8028DB00F8164D"
+               BlueprintIdentifier = "9C41AD131B82BD3B00944CF8"
                BuildableName = "GeekBank150010Tests.xctest"
                BlueprintName = "GeekBank150010Tests"
                ReferencedContainer = "container:GeekBank150010.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C44EB6F1B8028DB00F8164D"
+               BlueprintIdentifier = "9C41AD131B82BD3B00944CF8"
                BuildableName = "GeekBank150010Tests.xctest"
                BlueprintName = "GeekBank150010Tests"
                ReferencedContainer = "container:GeekBank150010.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C44EB561B8028DB00F8164D"
+            BlueprintIdentifier = "9C41ACFA1B82BD3B00944CF8"
             BuildableName = "GeekBank150010.app"
             BlueprintName = "GeekBank150010"
             ReferencedContainer = "container:GeekBank150010.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C44EB561B8028DB00F8164D"
+            BlueprintIdentifier = "9C41ACFA1B82BD3B00944CF8"
             BuildableName = "GeekBank150010.app"
             BlueprintName = "GeekBank150010"
             ReferencedContainer = "container:GeekBank150010.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C44EB561B8028DB00F8164D"
+            BlueprintIdentifier = "9C41ACFA1B82BD3B00944CF8"
             BuildableName = "GeekBank150010.app"
             BlueprintName = "GeekBank150010"
             ReferencedContainer = "container:GeekBank150010.xcodeproj">

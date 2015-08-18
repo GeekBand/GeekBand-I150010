@@ -1,5 +1,5 @@
 //
-//  GBMSquareCollectionView.h
+//  AppDelegate.h
 //  GeekBank150010
 //
 //  Created by 黄穆斌 on 15/8/18.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GBMSquareCollectionView : UICollectionView
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (nonatomic, strong) UICollectionViewFlowLayout * layout;
+@property (strong, nonatomic) UIWindow *window;
+
 
 @end
+

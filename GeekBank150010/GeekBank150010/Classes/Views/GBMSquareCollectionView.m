@@ -2,8 +2,8 @@
 //  GBMSquareCollectionView.m
 //  GeekBank150010
 //
-//  Created by 黄穆斌 on 15/8/16.
-//  Copyright (c) 2015年 huangmubin. All rights reserved.
+//  Created by 黄穆斌 on 15/8/18.
+//  Copyright (c) 2015年 MuRan. All rights reserved.
 //
 
 #import "GBMSquareCollectionView.h"
@@ -22,6 +22,5 @@
     self.backgroundColor = [UIColor whiteColor];
     return self;
 }
-
 
 @end
