@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GBMSquareViewController.h"
+#import "GBMTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,15 +16,22 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    #pragma mark - 初始化window并给他附上导航控制器，然后将GBMAquareViewController控制器放到它下面。
-    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    GBMSquareViewController * squareViewController = [[GBMSquareViewController alloc] init];
-    UINavigationController  * navigationController = [[UINavigationController alloc] initWithRootViewController:squareViewController];
-    _window.rootViewController = navigationController;
-    
-    [_window makeKeyAndVisible];
+//    #pragma mark - 初始化window并给他附上底栏和导航控制器，然后将GBMAquareViewController控制器放到它下面。
+//    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    // 初始化底栏
+//    GBMTabBarViewController * tabBarViewController = [[GBMTabBarViewController alloc] init];
+//    
+//    // 初始化其他视图
+//    GBMSquareViewController * squareViewController = [[GBMSquareViewController alloc] init];
+//    UINavigationController  * navigationController = [[UINavigationController alloc] initWithRootViewController:squareViewController];
+//    
+//    
+//    // 合并视图
+//    [tabBarViewController setViewControllers:@[navigationController] animated:YES];
+//    _window.rootViewController = tabBarViewController;
+//    
+//    [_window makeKeyAndVisible];
     return YES;
 }
 

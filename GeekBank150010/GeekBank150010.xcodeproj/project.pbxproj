@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C39E07C1B83697B00BC84C5 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C39E07B1B83697B00BC84C5 /* Storyboard.storyboard */; };
+		9C004E051B84B02A003F7E50 /* GBMTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C004E041B84B02A003F7E50 /* GBMTabBarButton.m */; };
+		9C004E3A1B84B5C4003F7E50 /* GBMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C004E391B84B5C4003F7E50 /* GBMTabBarViewController.m */; };
+		9C39E07C1B83697B00BC84C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C39E07B1B83697B00BC84C5 /* Main.storyboard */; };
 		9C41AD011B82BD3B00944CF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD001B82BD3B00944CF8 /* main.m */; };
 		9C41AD041B82BD3B00944CF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD031B82BD3B00944CF8 /* AppDelegate.m */; };
 		9C41AD0C1B82BD3B00944CF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C41AD0B1B82BD3B00944CF8 /* Images.xcassets */; };
@@ -16,10 +18,9 @@
 		9C41AD2B1B82BF0E00944CF8 /* GBMSquareDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD2A1B82BF0E00944CF8 /* GBMSquareDataModel.m */; };
 		9C41AD2E1B82BF6B00944CF8 /* GBMSquareData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD2D1B82BF6B00944CF8 /* GBMSquareData.m */; };
 		9C41AD321B82BFFE00944CF8 /* GBMSquareCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD311B82BFFE00944CF8 /* GBMSquareCollectionView.m */; };
-		9C41AD351B82C03E00944CF8 /* GBMTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD341B82C03E00944CF8 /* GBMTabBarView.m */; };
 		9C41AD381B82C08000944CF8 /* GBMCameraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD371B82C08000944CF8 /* GBMCameraButton.m */; };
-		9C41AD3B1B82C0C700944CF8 /* GBMSquareTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD3A1B82C0C700944CF8 /* GBMSquareTableViewCell.m */; };
 		9C41AD3F1B82C13500944CF8 /* GBMSquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD3E1B82C13500944CF8 /* GBMSquareViewController.m */; };
+		9C4C597E1B860D0B008738BF /* GBMSquareTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4C597D1B860D0B008738BF /* GBMSquareTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C39E07B1B83697B00BC84C5 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		9C004E031B84B02A003F7E50 /* GBMTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMTabBarButton.h; path = Classes/Views/GBMTabBarButton.h; sourceTree = "<group>"; };
+		9C004E041B84B02A003F7E50 /* GBMTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMTabBarButton.m; path = Classes/Views/GBMTabBarButton.m; sourceTree = "<group>"; };
+		9C004E381B84B5C4003F7E50 /* GBMTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMTabBarViewController.h; path = Classes/Controllers/GBMTabBarViewController.h; sourceTree = "<group>"; };
+		9C004E391B84B5C4003F7E50 /* GBMTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMTabBarViewController.m; path = Classes/Controllers/GBMTabBarViewController.m; sourceTree = "<group>"; };
+		9C39E07B1B83697B00BC84C5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9C41ACFB1B82BD3B00944CF8 /* GeekBank150010.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekBank150010.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C41ACFF1B82BD3B00944CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C41AD001B82BD3B00944CF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,14 +55,12 @@
 		9C41AD2D1B82BF6B00944CF8 /* GBMSquareData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMSquareData.m; path = Classes/Parsers/GBMSquareData.m; sourceTree = "<group>"; };
 		9C41AD301B82BFFE00944CF8 /* GBMSquareCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMSquareCollectionView.h; path = Classes/Views/GBMSquareCollectionView.h; sourceTree = "<group>"; };
 		9C41AD311B82BFFE00944CF8 /* GBMSquareCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMSquareCollectionView.m; path = Classes/Views/GBMSquareCollectionView.m; sourceTree = "<group>"; };
-		9C41AD331B82C03E00944CF8 /* GBMTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMTabBarView.h; path = Classes/Views/GBMTabBarView.h; sourceTree = "<group>"; };
-		9C41AD341B82C03E00944CF8 /* GBMTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMTabBarView.m; path = Classes/Views/GBMTabBarView.m; sourceTree = "<group>"; };
 		9C41AD361B82C07F00944CF8 /* GBMCameraButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMCameraButton.h; path = Classes/Views/GBMCameraButton.h; sourceTree = "<group>"; };
 		9C41AD371B82C08000944CF8 /* GBMCameraButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMCameraButton.m; path = Classes/Views/GBMCameraButton.m; sourceTree = "<group>"; };
-		9C41AD391B82C0C700944CF8 /* GBMSquareTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMSquareTableViewCell.h; path = Classes/Views/GBMSquareTableViewCell.h; sourceTree = "<group>"; };
-		9C41AD3A1B82C0C700944CF8 /* GBMSquareTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMSquareTableViewCell.m; path = Classes/Views/GBMSquareTableViewCell.m; sourceTree = "<group>"; };
 		9C41AD3D1B82C13500944CF8 /* GBMSquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMSquareViewController.h; path = Classes/Controllers/GBMSquareViewController.h; sourceTree = "<group>"; };
 		9C41AD3E1B82C13500944CF8 /* GBMSquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMSquareViewController.m; path = Classes/Controllers/GBMSquareViewController.m; sourceTree = "<group>"; };
+		9C4C597C1B860D0B008738BF /* GBMSquareTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMSquareTableViewController.h; path = Classes/Controllers/GBMSquareTableViewController.h; sourceTree = "<group>"; };
+		9C4C597D1B860D0B008738BF /* GBMSquareTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMSquareTableViewController.m; path = Classes/Controllers/GBMSquareTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +161,7 @@
 			children = (
 				9C41AD0B1B82BD3B00944CF8 /* Images.xcassets */,
 				9C41AD0D1B82BD3B00944CF8 /* LaunchScreen.xib */,
-				9C39E07B1B83697B00BC84C5 /* Storyboard.storyboard */,
+				9C39E07B1B83697B00BC84C5 /* Main.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -186,12 +189,10 @@
 			children = (
 				9C41AD301B82BFFE00944CF8 /* GBMSquareCollectionView.h */,
 				9C41AD311B82BFFE00944CF8 /* GBMSquareCollectionView.m */,
-				9C41AD331B82C03E00944CF8 /* GBMTabBarView.h */,
-				9C41AD341B82C03E00944CF8 /* GBMTabBarView.m */,
+				9C004E031B84B02A003F7E50 /* GBMTabBarButton.h */,
+				9C004E041B84B02A003F7E50 /* GBMTabBarButton.m */,
 				9C41AD361B82C07F00944CF8 /* GBMCameraButton.h */,
 				9C41AD371B82C08000944CF8 /* GBMCameraButton.m */,
-				9C41AD391B82C0C700944CF8 /* GBMSquareTableViewCell.h */,
-				9C41AD3A1B82C0C700944CF8 /* GBMSquareTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -199,6 +200,10 @@
 		9C41AD3C1B82C0F500944CF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9C004E381B84B5C4003F7E50 /* GBMTabBarViewController.h */,
+				9C004E391B84B5C4003F7E50 /* GBMTabBarViewController.m */,
+				9C4C597C1B860D0B008738BF /* GBMSquareTableViewController.h */,
+				9C4C597D1B860D0B008738BF /* GBMSquareTableViewController.m */,
 				9C41AD3D1B82C13500944CF8 /* GBMSquareViewController.h */,
 				9C41AD3E1B82C13500944CF8 /* GBMSquareViewController.m */,
 			);
@@ -287,7 +292,7 @@
 			files = (
 				9C41AD0F1B82BD3B00944CF8 /* LaunchScreen.xib in Resources */,
 				9C41AD0C1B82BD3B00944CF8 /* Images.xcassets in Resources */,
-				9C39E07C1B83697B00BC84C5 /* Storyboard.storyboard in Resources */,
+				9C39E07C1B83697B00BC84C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C4C597E1B860D0B008738BF /* GBMSquareTableViewController.m in Sources */,
 				9C41AD041B82BD3B00944CF8 /* AppDelegate.m in Sources */,
 				9C41AD2B1B82BF0E00944CF8 /* GBMSquareDataModel.m in Sources */,
 				9C41AD321B82BFFE00944CF8 /* GBMSquareCollectionView.m in Sources */,
 				9C41AD381B82C08000944CF8 /* GBMCameraButton.m in Sources */,
+				9C004E051B84B02A003F7E50 /* GBMTabBarButton.m in Sources */,
 				9C41AD011B82BD3B00944CF8 /* main.m in Sources */,
-				9C41AD3B1B82C0C700944CF8 /* GBMSquareTableViewCell.m in Sources */,
 				9C41AD2E1B82BF6B00944CF8 /* GBMSquareData.m in Sources */,
-				9C41AD351B82C03E00944CF8 /* GBMTabBarView.m in Sources */,
+				9C004E3A1B84B5C4003F7E50 /* GBMTabBarViewController.m in Sources */,
 				9C41AD3F1B82C13500944CF8 /* GBMSquareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
