@@ -19,7 +19,6 @@
 		9C41AD2E1B82BF6B00944CF8 /* GBMSquareData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD2D1B82BF6B00944CF8 /* GBMSquareData.m */; };
 		9C41AD321B82BFFE00944CF8 /* GBMSquareCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD311B82BFFE00944CF8 /* GBMSquareCollectionView.m */; };
 		9C41AD381B82C08000944CF8 /* GBMCameraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD371B82C08000944CF8 /* GBMCameraButton.m */; };
-		9C41AD3F1B82C13500944CF8 /* GBMSquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41AD3E1B82C13500944CF8 /* GBMSquareViewController.m */; };
 		9C4C597E1B860D0B008738BF /* GBMSquareTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4C597D1B860D0B008738BF /* GBMSquareTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +56,6 @@
 		9C41AD311B82BFFE00944CF8 /* GBMSquareCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMSquareCollectionView.m; path = Classes/Views/GBMSquareCollectionView.m; sourceTree = "<group>"; };
 		9C41AD361B82C07F00944CF8 /* GBMCameraButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMCameraButton.h; path = Classes/Views/GBMCameraButton.h; sourceTree = "<group>"; };
 		9C41AD371B82C08000944CF8 /* GBMCameraButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMCameraButton.m; path = Classes/Views/GBMCameraButton.m; sourceTree = "<group>"; };
-		9C41AD3D1B82C13500944CF8 /* GBMSquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMSquareViewController.h; path = Classes/Controllers/GBMSquareViewController.h; sourceTree = "<group>"; };
-		9C41AD3E1B82C13500944CF8 /* GBMSquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMSquareViewController.m; path = Classes/Controllers/GBMSquareViewController.m; sourceTree = "<group>"; };
 		9C4C597C1B860D0B008738BF /* GBMSquareTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBMSquareTableViewController.h; path = Classes/Controllers/GBMSquareTableViewController.h; sourceTree = "<group>"; };
 		9C4C597D1B860D0B008738BF /* GBMSquareTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBMSquareTableViewController.m; path = Classes/Controllers/GBMSquareTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,8 +201,6 @@
 				9C004E391B84B5C4003F7E50 /* GBMTabBarViewController.m */,
 				9C4C597C1B860D0B008738BF /* GBMSquareTableViewController.h */,
 				9C4C597D1B860D0B008738BF /* GBMSquareTableViewController.m */,
-				9C41AD3D1B82C13500944CF8 /* GBMSquareViewController.h */,
-				9C41AD3E1B82C13500944CF8 /* GBMSquareViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -319,7 +314,6 @@
 				9C41AD011B82BD3B00944CF8 /* main.m in Sources */,
 				9C41AD2E1B82BF6B00944CF8 /* GBMSquareData.m in Sources */,
 				9C004E3A1B84B5C4003F7E50 /* GBMTabBarViewController.m in Sources */,
-				9C41AD3F1B82C13500944CF8 /* GBMSquareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

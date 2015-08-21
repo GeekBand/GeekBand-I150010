@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "GBMSquareViewController.h"
 #import "GBMTabBarViewController.h"
 
 @interface AppDelegate ()

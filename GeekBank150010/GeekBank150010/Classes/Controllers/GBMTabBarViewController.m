@@ -26,12 +26,8 @@
     [super viewDidLoad];
     // 去除边线
     [self.tabBar setShadowImage:[UIImage new]];
-    UIGraphicsBeginImageContext(self.tabBar.bounds.size);
-    UIImage * image = [UIImage imageNamed:@"emptyImage"];
-    UIGraphicsEndImageContext();
-    [self.tabBar setBackgroundImage:image];
-    
-    
+    [self.tabBar setBackgroundImage:[[UIImage alloc] init]];
+    self.tabBar.tintColor = [UIColor orangeColor];
     [self.tabBar addSubview:self.cameraButton];
     
 }
