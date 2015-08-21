@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--My-->
+        <!--我的-->
         <scene sceneID="fb5-OG-ODK">
             <objects>
                 <viewController id="c9z-gM-5qh" sceneMemberID="viewController">
@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My" image="my" id="6za-lC-Vc1"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="my" id="6za-lC-Vc1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ms2-9D-2Jo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="589" y="393"/>
         </scene>
-        <!--Square Table View Controller-->
+        <!--附近1000米-->
         <scene sceneID="DAm-o2-383">
             <objects>
                 <tableViewController id="nVy-26-lN8" customClass="GBMSquareTableViewController" sceneMemberID="viewController">
@@ -44,9 +44,7 @@
                             <outlet property="delegate" destination="nVy-26-lN8" id="Yan-RJ-k8a"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3Ws-oR-68v">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gXA-PO-iUH"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="附近1000米" id="3Ws-oR-68v"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAA-zp-gwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,15 +69,19 @@
             </objects>
             <point key="canvasLocation" x="-231" y="62"/>
         </scene>
-        <!--Square-->
+        <!--广场-->
         <scene sceneID="8nr-Il-a6o">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="crC-Je-AKS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Square" image="square" id="4fH-Ae-JSV"/>
+                    <tabBarItem key="tabBarItem" title="广场" image="square" id="4fH-Ae-JSV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ve6-zh-zq3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.98823535439999999" green="0.43921571970000001" blue="0.011764707040000001" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -88,7 +90,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSS-1M-fxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="589" y="-269"/>
+            <point key="canvasLocation" x="602" y="-311"/>
         </scene>
     </scenes>
     <resources>

@@ -57,17 +57,19 @@
         
         [self cleanCellSubviews:cell];
         
+        // 设置图标
         UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"location"]];
         imageView.contentMode = UIViewContentModeScaleToFill;
         imageView.frame = CGRectMake(6, 13, 12, 12);
         [cell addSubview:imageView];
         
+        // 设置标签
         UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(24, 7, cell.bounds.size.width - 24, 25)];
         label.text = [NSString stringWithFormat:@"This is the %li cell", (long)indexPath.row];
         label.textColor = [UIColor colorWithRed:152 / 255.0 green:152 / 255.0 blue:152 / 255.0 alpha:1];
         [cell addSubview:label];
 
-        
+        // 设置集合视图
         GBMSquareCollectionView * squareCollectionView = [[GBMSquareCollectionView alloc] initWithFrame:CGRectMake(15, 32, cell.bounds.size.width - 15, cell.bounds.size.height - 32)];
         [squareCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"CollectionCell"];
         
@@ -103,12 +105,26 @@
     
     UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionCell" forIndexPath:indexPath];
     if (indexPath.row < self.dataArray.count) {
+        
+        GBMSquareDataModel * data = self.dataArray[indexPath.row];
+        // 配置图片
         UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 140, 95)];
         imageView.contentMode = UIViewContentModeScaleToFill;
-        GBMSquareDataModel * data = self.dataArray[indexPath.row];
         imageView.image = [UIImage imageNamed:data.photoURL];
+        
+        // 配置文字
+        UILabel * label = [[UILabel alloc] initWithFrame:CGRectZero];
+        label.numberOfLines = 0;
+        UIFont * font = [UIFont systemFontOfSize:12];
+        CGRect rect = [[data photoNote] boundingRectWithSize:CGSizeMake(140, 31) options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : font} context:nil];
+        label.frame = CGRectMake(0, 104, 140, rect.size.height);
+        label.font = font;
+        label.text = data.photoNote;
+        
+        // 添加视图
         [self cleanCellSubviews:cell];
         [cell addSubview:imageView];
+        [cell addSubview:label];
     }
     return cell;
 }
@@ -121,8 +137,8 @@
     return 6;
 }
 
-//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-//    return 6;
-//}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"you did selection the cell");
+}
 
 @end
